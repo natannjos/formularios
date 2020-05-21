@@ -1,0 +1,24 @@
+ hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+
+.btn-info {
+  background-color: purple;
+  border-color: purple;
+}
+
+.inside-icon {
+  border-right-color: white;
+}
+
+input {
+    word-spacing:-3px;
+}
