@@ -7,14 +7,15 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">  
+    <link rel="stylesheet" href="css/all.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     
     <title>Olá Mundo</title>
 </head>
 <body>
     <!-- Primeiro Formulario -->
     <div class="container h-100">
-        <!-- form1 -->
+
         <div class="row h-100 align-items-center justify-content-between">
                 <label for="form1"><h1>Critérios de Alarme | Pesquisa</h1></label>
                 <div class="form-group"> 
@@ -77,20 +78,19 @@
 
     </div>
 
-<hr style="margin: 50px 0 50px 0;">
+    <hr style="margin: 50px 0 50px 0;">
     
-
-<!-- Segundo Formulario -->
+    <!-- Segundo Formulario -->
     <div class="container h-100">
 
         <div class="row h-100 align-items-center justify-content-start">
-            <label for="form1">
+            <label for="form2">
                 <h1>Critérios de Alarme | Edição</h1>
             </label>
             
         </div>
         <hr>
-        <form action="" id="form1" class="col-12">
+        <form action="" id="form2" class="col-12">
             <div class="row">
                 <div class="form-control-group col-10 ">
                     <label for="periodo">Descrição</label>
@@ -126,6 +126,67 @@
     </div>
 
 
+    <hr style="margin: 50px 0 50px 0;">
+
+    <!-- Terceiro Formulário -->
+    <div class="container">
+
+        <div class="row align-items-center justify-content-between">
+            <label for="form3">
+                <h1>Parâmetros de Alarme | Edição</h1>
+            </label>
+        </div>
+
+        <hr>
+        
+        <form action="" id="form3" class="col-12">
+            <div class="row">
+                <div class="form-control-group col-2 ">
+                    <label for="parametros">Nome Parâmetro</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" "  id=" parametros">
+                    </div>
+                </div>
+                <div class="form-control-group col-3">
+                    <label for="ocorrencias">Número de Ocorrências</label>
+                    <div class="input-group">
+                        <input type="number" min="0" class="form-control" id="ocorrencias">
+                    </div>
+                </div>
+                <div class="form-control-group col-2">
+                    <label for="passadas">Número de Passadas</label>
+                    <div class="input-group">
+                        <input type="number" min="0" class="form-control" id="ocorrencias">
+                    </div>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="descricao">Descrição</label>
+                    <div>
+
+                    </div>
+                    <select class="selectpicker" id="descricao" multiple data-none-Selected-Text='Selecione as opçoes'>
+                        <option >ZAC</option>
+                        <option>ZAR</option>
+                        <option>ZXI</option>
+                    </select>
+
+                </div>
+
+                <div class="col-2 text-center">
+                       <div class="form-check form-check-inline mt-4">
+                           <input class="form-check-input" type="checkbox" id="ultimaPassada" value="ultimaPassada">
+                           <label class="form-check-label" for="ultimaPassada">Última Passada</label>
+                       </div>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -138,7 +199,7 @@
 
         <script src="js/all.min.js"></script>
         <script src="js/date-input.js"></script>
-
+        <script src="js/bootstrap-select.min.js"></script>
 
 </body>
 </html>
