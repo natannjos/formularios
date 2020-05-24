@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+
+    <title>Form 3</title>
+</head>
+
+<body>
+
+    <!-- Terceiro Formulário -->
+    <div class="container">
+        
+        <div class="navbar">
+            <nav><a href="index.html">Home</a></nav>
+        </div>
+
+        <div class="row align-items-center justify-content-between">
+            <label for="form3">
+                <h1>Parâmetros de Alarme | Edição</h1>
+            </label>
+        </div>
+
+        <hr>
+
+        <form action="" id="form3" class="col-12">
+            <div class="row">
+                <div class="form-control-group col-2 ">
+                    <label for="parametros">Nome Parâmetro</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" "  id=" parametros">
+                    </div>
+                </div>
+                <div class="form-control-group col-3">
+                    <label for="ocorrencias">Número de Ocorrências</label>
+                    <div class="input-group">
+                        <input type="number" min="0" class="form-control" id="ocorrencias">
+                    </div>
+                </div>
+                <div class="form-control-group col-2">
+                    <label for="passadas">Número de Passadas</label>
+                    <div class="input-group">
+                        <input type="number" min="0" class="form-control" id="ocorrencias">
+                    </div>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="dispositivos">Dispositivos</label>
+                    <select class="selectpicker" id="dispositivos" multiple
+                        data-none-Selected-Text='Selecione as opçoes'>
+                        <option>ZAC</option>
+                        <option>ZAR</option>
+                        <option>ZXI</option>
+                    </select>
+                </div>
+
+                <div class="col-2 text-center">
+                    <div class="form-check form-check-inline mt-4 pt-3">
+                        <input class="form-check-input" type="checkbox" id="ultimaPassada" value="ultimaPassada">
+                        <label class="form-check-label" for="ultimaPassada">Última Passada</label>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+        <form action="" class="col-12" style="border: 1px solid; z-index:0">
+
+            <span class="pr-1 pl-1"
+                style="position: relative; bottom:13px; z-index:1000; background-color: white;"><b>Expressão</b></span>
+
+            <div class="row">
+                <div class="col-5">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="form-group col-4">
+                            <label for="variaveis">Variáveis</label>
+                            <select name="variaveis" class="custom-select" id="variaveis">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-4">
+                            <label for="valor">Valor</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-3 row pt-2">
+                            <button class="btn btn-outline-dark mt-4" type="button" id="voltar"><i
+                                    class="fas fa-angle-double-left"></i></button>
+                        </div>
+
+                    </div>
+
+                    <!-- Calculadora -->
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 ">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-plus"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b><i class="fas fa-divide"></i></b></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-greater-than"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-greater-than-equal"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-equals"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>E</b></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>(</b></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-minus"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b><i class="fas fa-times"></i></b></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-less-than"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-less-than-equal"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><i class="fas fa-not-equal"></i></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>OU</b></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>)</b></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>Contém</b></button>
+                                    </td>
+                                    <td colspan="3">
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>Inicia com</b></button>
+                                    </td>
+                                    <td colspan="2">
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>Média</b></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>Ñ Contém</b></button>
+                                    </td>
+                                    <td colspan="3">
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>Termina
+                                                com</b></button>
+                                    </td>
+                                    <td colspan="2">
+                                        <button class="btn btn-outline-secondary btn-lg btn-block text-dark"
+                                            type="button"><b>Constante</b></button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-7">
+                    <label for="expressaoMatematica">Expressão Matemática</label>
+                    <div class="form-group">
+                        <textarea style="width: 100%; resize:none" rows="10" id="expressaoMatematica"
+                            name="expressaoMatematica"></textarea>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <label for="codigoPython"><b>Código Python</b></label>
+                    <div class="form-group">
+                        <textarea style="width: 100%; resize:none" rows=10 name="codigoPython"
+                            id="codigoPython"></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <div class="row justify-content-end mt-2">
+            <div class="col-auto">
+
+                <button class="btn btn-danger mr-4" type="button" id="pesquisar"><i class="fas fa-lg fa-ban"></i>
+                    Cancelar</button>
+
+                <button class="btn btn-warning mr-4" type="button" id="exportar"><i class="fas fa-lg fa-eraser"></i>
+                    Limpar</button>
+
+                <button class="btn btn-primary" type="button" id="novo"><i class="fas fa-lg fa-save"></i>
+                    Salvar</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- Scripts dos formularios -->
+    <script src="js/all.min.js"></script>
+    <!--Icones -->
+    <script src="js/date-input.js"></script> <!-- Validação de datas -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!--Para o seletor múltiplo-->
+
+</body>
+
+</html>

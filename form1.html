@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    
+    <title>Olá Mundo</title>
+</head>
+<body>
+    <!-- Primeiro Formulario -->
+    <div class="container">
+         <div class="navbar">
+             <nav><a href="index.html">Home</a></nav>
+         </div>
+
+        <div class="row align-items-center justify-content-between">
+                <label for="form1"><h1>Critérios de Alarme | Pesquisa</h1></label>
+                <div class="form-group"> 
+                    <button class="btn btn-secondary" type="button" id="button-addon1"><i class="far fa-envelope"></i> Email</button>
+                    <button class="btn btn-info" type="button" id="button-addon1">Simulador</button>
+                </div>
+        </div>
+        <hr>
+        <div class="row">
+            <form action="" id="form1" class="col-12">
+                <div class="row">
+
+                    <div class="form-control-group col-2 ">
+                        <label for="periodo">Período de</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control py-2 inside-icon" id="periodo" placeholder=" / /">
+                            <span class="input-group-append">
+                                <div class="input-group-text bg-transparent"><i class="far fa-lg fa-calendar-alt"></i></i></div>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div class="form-control-group col-2">
+                        <label for="ate">Até</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control py-2 inside-icon" id="ate" placeholder=" / /">
+                            <span class="input-group-append">
+                                <div class="input-group-text bg-transparent"><i class="far fa-lg fa-calendar-alt"></i></i></div>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-2">
+                        <label for="status">Status</label>
+                        <select name="status" class="custom-select" id="status">
+                            <option selected value="">Selecione</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-2">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" class="form-control" id="descricao" >
+                    </div>
+                    
+                    <!-- Botões -->
+                    <div class="form-group col-4 row align-items-end justify-content-around">
+                        
+                            <button class="btn btn-primary" type="button" id="pesquisar"><i
+                                    class="fas fa-lg fa-search"></i> Pesquisar</button>
+                        
+                            <button class="btn btn-success" type="button" id="exportar"><i
+                                    class="fas fa-table"></i> Exportar</button>
+                        
+                            <button class="btn btn-warning" type="button" id="novo"><i class="fas fa-plus"></i> Novo</button>
+                        
+                    </div>
+                </div>
+
+                <div class="row align-items-center justify-content-center ">
+                    <table class="table table-striped" id="tabela">
+                        <thead>
+                            <tr class="bg-info">
+                                <th colspan="5">Descrição</th>
+                                <th>Data de Modificação</th>
+                                <th>Status</th>
+                                <th class="text-center">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta lacinia eleifend. Praesent libero sapien
+                                </td>
+                                <td>11/11/1111 10:33:33</td>
+                                <td>ATIVO</td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-default pr-0 pl-0" type="button" id="novo"><i
+                                            class="fas fa-lg fa-pen"></i></button>
+                                    <button class="btn btn-sm btn-default pr-0 pl-0" type="button" id="novo"><i
+                                            class="fas fa-lg fa-trash"></i></button>
+                                    <button class="btn btn-sm btn-default pr-0 pl-0" type="button" id="novo"><i
+                                            class="fas fa-lg fa-envelope"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta lacinia eleifend. Praesent libero sapien
+                                </td>
+                                <td>11/11/1111 10:33:33</td>
+                                <td>ATIVO</td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-default pr-0 pl-0" type="button" id="novo"><i
+                                            class="fas fa-lg fa-pen"></i></button>
+                                    <button class="btn btn-sm btn-default pr-0 pl-0" type="button" id="novo"><i
+                                            class="fas fa-lg fa-trash"></i></button>
+                                    <button class="btn btn-sm btn-default pr-0 pl-0" type="button" id="novo"><i
+                                            class="fas fa-lg fa-envelope"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </form>
+                </div>
+        
+
+    </div>
+
+
+     <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Scripts dos formularios -->
+    <script src="js/all.min.js"></script> <!--Icones -->    
+    <script src="js/date-input.js"></script> <!-- Validação de datas -->
+    <script src="js/bootstrap-select.min.js"></script> <!--Para o seletor múltiplo-->
+
+</body>
+</html>

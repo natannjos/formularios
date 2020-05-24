@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    
+    <title>Form 2</title>
+</head>
+<body>
+    
+    <!-- Segundo Formulario -->
+    <div class="container">
+        <div class="navbar">
+            <nav><a href="index.html">Home</a></nav>
+        </div>
+
+
+        <div class="row align-items-center justify-content-start">
+            <label for="form2">
+                <h1>Critérios de Alarme | Edição</h1>
+            </label>
+            
+        </div>
+        <hr>
+        <div class="row">
+            <form action="" id="form2" class="col-12">
+                <div class="row">
+
+                    <div class="form-control-group col-10">
+                        <label for="periodo"><b>Descrição</b></label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="descricao">
+                        </div>
+    
+                    </div>
+                    <div class="form-group col-2">
+                        <label for="status"><b>Status</b></label>
+                        <select name="status" class="custom-select" id="status">
+                            <option selected value="">Ativo</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="form-control-group col-12">
+                        <label for="ate"><b>Expressão Completa</b></label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="expresao-completa">
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+
+         <div class="row mt-3 mb-2 align-items-center justify-content-between">
+             <div class="col-auto">
+                 <label for="tabela"><b>Parâmetros de Alarme</b></label>
+             </div>
+
+             <div class="col-auto">
+                 <button class="btn btn-success"><i class="fas fa-table"></i> Exportar</button>
+                 <button class="btn btn-warning"><i class="fas fa-plus"></i> Inserir</button>
+             </div>
+
+         </div>
+         <div class="row align-items-center justify-content-center">
+             <table class="table table-striped" id="tabela">
+                <thead>
+                    <tr class="bg-info">
+                        <th colspan="2">Novo Parâmetro</th>
+                        <th colspan="2">Expressão</th>
+                        <th>Nº Ocorrências</th>
+                        <th>Nº Passadas</th>
+                        <th>Última passada</th>
+                        <th>Ordem</th>
+                        <th>Operador</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Lorem ipsum dolor sit amet</td>
+                        <td colspan="2">Lorem ipsum dolor sit amet</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>Não</td>
+                        <td>
+                            <i class="fa fa-arrow-up"></i>
+                            <i class="fa fa-arrow-down"></i>
+                        </td>
+                        <td>
+                            <select class="custom-select" name="operador" id="operador">
+                                <option value="and">AND</option>
+                                <option value="and">OR</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-default pr-0 pl-0"><i class="fa fa-sm fa-pen"></i></button>
+                            <button class="btn btn-sm btn-default pr-0 pl-0"><i class="fa fa-sm fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Lorem ipsum dolor sit amet</td>
+                        <td colspan="2">Lorem ipsum dolor sit amet</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>Não</td>
+                        <td>
+                            <i class="fa fa-arrow-up"></i>
+                            <i class="fa fa-arrow-down"></i>
+                        </td>
+                        <td>
+                            <select class="custom-select" name="operador" id="operador">
+                                <option value="and">AND</option>
+                                <option value="and">OR</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-default pr-0 pl-0"><i class="fa fa-sm fa-pen"></i></button>
+                            <button class="btn btn-sm btn-default pr-0 pl-0"><i class="fa fa-sm fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                </tbody>
+             </table>
+         </div>
+
+         <div class="row align-items-center justify-content-end">
+             <div class="col-auto">
+                 <button class="btn btn-info"><i class="fas fa-code"></i> Exportar Jupyter</button>
+                 <button class="btn btn-danger"><i class="fas fa-ban"></i> Cancelar</button>
+                 <button class="btn btn-primary"><i class="fas fa-save"></i> Salvar</button>
+             </div>
+         </div>
+
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Scripts dos formularios -->
+    <script src="js/all.min.js"></script> <!--Icones -->    
+    <script src="js/date-input.js"></script> <!-- Validação de datas -->
+    <script src="js/bootstrap-select.min.js"></script> <!--Para o seletor múltiplo-->
+
+</body>
+</html>
