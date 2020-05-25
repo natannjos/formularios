@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    
+    <title>Olá Mundo</title>
+</head>
+<body>
+    <!-- Primeiro Formulario -->
+    <div class="container">
+         <div class="navbar">
+             <nav><a href="index.html">Home</a></nav>
+         </div>
+
+        <div class="row align-items-center ">
+                <label for="form1"><h1>Simulador</h1></label>
+        </div>
+        <hr>
+        <div class="row">
+            <form action="" id="form1" class="col-12">
+                <div class="row">
+
+                    <div class="form-control-group col-2 ">
+                        <label for="periodo"><b>Período de</b></label>
+                        <div class="input-group">
+                            <input type="text" class="form-control py-2 inside-icon" id="periodo" placeholder=" / /">
+                            <span class="input-group-append">
+                                <div class="input-group-text bg-transparent"><i class="far fa-lg fa-calendar-alt"></i></i></div>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div class="form-control-group col-2">
+                        <label for="ate"><b>Até</b></label>
+                        <div class="input-group">
+                            <input type="text" class="form-control py-2 inside-icon" id="ate" placeholder=" / /">
+                            <span class="input-group-append">
+                                <div class="input-group-text bg-transparent"><i class="far fa-lg fa-calendar-alt"></i></i></div>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+         <div class="row align-items-center mt-2">
+             
+             <div class="form-group col-10">
+                 <label for="dispositivos"><b>Critérios</b></label>
+                 <select class="custom-select" id="dispositivos" multiple data-none-Selected-Text='Selecione as opçoes'>
+                     <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem ipsum, facilisis vel libero vel, lacinia faucibus risus.</option>
+                     <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem ipsum, facilisis vel libero vel, lacinia faucibus risus.</option>
+                     <option>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem ipsum, facilisis vel libero vel, lacinia faucibus risus.</option>
+                 </select>
+             </div>
+
+        
+            <!-- Botões -->
+            <div class="form-group col-2 row">
+                
+                <button class="btn btn-warning btn-block" type="button" id="novo"><i class="fas fa-sync-alt"></i>
+                    Atualizar</button>
+                
+                <button class="btn btn-success btn-block" type="button" id="exportar"><i
+                            class="fas fa-table"></i> Exportar</button>
+            </div>
+        </div>
+        <!-- Tabela -->
+        
+            <ul class="nav nav-tabs" id="tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tabela-tab" data-toggle="tab" href="#tabela" role="tab"
+                        aria-controls="home" aria-selected="true">Tabela</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="grafico-tab" data-toggle="tab" href="#grafico" role="tab"
+                            aria-controls="grafico" aria-selected="false">Gráfico</a>
+                    </li>
+                
+            </ul>
+            <div class="tab-content" id="myTabContent" role="tabpanel" aria-labelledby="tabela-tab">
+                <div class="tab-pane fade show active" id="tabela">
+                    <table class="table table-striped " >
+                                <thead>
+                                    <tr class="bg-info">
+                                        <th>Veículo</th>
+                                        <th>Equipamento</th>
+                                        <th>Data</th>
+                                        <th>Trem</th>
+                                        <th>OS</th>
+                                        <th>Critério 1...</th>
+                                        <th>Critério 2...</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            TCS 373001
+                                        </td>
+                                        <td>ZUE - HOTBOX</td>
+                                        <td>28/08/2019 08:20</td>
+                                        <td>T55</td>
+                                        <td>169777</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            TCS 373002
+                                        </td>
+                                        <td>tap - HOTBOX</td>
+                                        <td>10/05/2019 10:32</td>
+                                        <td>T51</td>
+                                        <td>169694</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+            
+                                </tbody>
+                    </table>
+                </div>
+
+                <div class="tab-pane fade" id="grafico" role="tabpanel" aria-labelledby="grafico-tab">
+                    <!-- Crie aqui o gráfico -->
+                </div>
+
+            </div>
+            
+        
+    </div>
+
+
+     <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Scripts dos formularios -->
+    <script src="js/all.min.js"></script> <!--Icones -->    
+    <script src="js/date-input.js"></script> <!-- Validação de datas -->
+    <script src="js/bootstrap-select.min.js"></script> <!--Para o seletor múltiplo-->
+    <script src="js/grafico.js"></script>
+
+</body>
+</html>
